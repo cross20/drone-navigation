@@ -16,9 +16,8 @@ bestFitTime = float(bestFitTime)
 finishTime = 0.0
 startTime = 0.0
 
-flightDuration = 2.0 # seconds
+flightDuration = 1.0 # seconds
 pauseDuration = 0.5 # seconds
-flightCycles = 10
 
 navString = ""
 navList = ['', '', '', '', '', '']
@@ -26,7 +25,7 @@ navList = ['', '', '', '', '', '']
 mamboAddr = "71649803"
 mambo = Mambo(mamboAddr, use_wifi=True)
 
-parents = input("Is this the first or second generation? Enter \"y\" or \"n\". ")
+parents = input("Is this the first generation? Enter \"y\" or \"n\". ")
 
 if parents == 'y':
     navFile = open("mamboStrings.txt", "w")
@@ -36,7 +35,7 @@ if parents == 'y':
         navString += random.choice(string.numbers)
 
     navFile.write(navString)
-    navTimeFile.write(0.0)
+    #navTimeFile.write(0.0)
 
     for y in range (0, (len(navString))):
         navList[y] = navString[y]

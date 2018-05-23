@@ -29,12 +29,15 @@ girl += father[:crossPointGirl]
 
 # Mutation
 
+boy[random.randint(0, len(boy))] = random.choice(string.numbers)
+girl[random.randint(0, len(girl))] = random.choice(string.numbers)
+
 # Concatenation
 
 boy += random.choice(string.numbers)
 girl += random.choice(string.numbers)
 
-mamboAddr = "71649803"
+mamboAddr = "71649864"
 
 mambo = Mambo(mamboAddr, use_wifi=True)
 

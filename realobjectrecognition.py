@@ -8,7 +8,7 @@ string.numbers = '0123'
 bestFitTime = 0.0
 finishTime = 0.0
 
-flightDuration = 0.5 # seconds
+flightDuration = 1.0 # seconds
 pauseDuration = 0.5 # seconds
 flightCycles = 10
 
